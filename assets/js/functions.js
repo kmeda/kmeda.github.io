@@ -9,7 +9,7 @@ $(document).ready(function(){
     
 //On Page Load
     $.ajax( {
-      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
       success: function(data) {
         var post = data.shift(); 
         $('.author').text(post.title);
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('.new-quote').on('click', function(e) {
     e.preventDefault();
     $.ajax( {
-      url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
       success: function(data) {
         var post = data.shift(); 
         $('.author').text(post.title);
