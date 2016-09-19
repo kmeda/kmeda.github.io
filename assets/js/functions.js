@@ -1,7 +1,7 @@
 
 
 function tweet() {
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($(".message")[0]["innerText"]));
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($(".message")[0]["innerText"]) + "- "(".author")[0]["innerText"]);
 }
 
 $(document).ready(function(){
