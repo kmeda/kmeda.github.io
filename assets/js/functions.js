@@ -1,7 +1,7 @@
 
 
 function tweet() {
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($(".message")));
+    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent($(".message")[0]["innerText"]));
 }
 
 $(document).ready(function(){
@@ -35,8 +35,7 @@ $(document).ready(function(){
   });
 
 
-
+//Tweet Quote
 $('.tweet-quote').on('click', tweet); 
-    console.log($(".message")[0]);
 
 });
